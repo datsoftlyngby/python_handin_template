@@ -28,7 +28,6 @@ neighb = {
 
 newDict = {}
 
-
 def getPubInCity():
     for n in neighb:
         mask = (bef_stats_df[:, 1] == n) & (bef_stats_df[:, 0] == 2015)
