@@ -1,11 +1,12 @@
 from typing import Text
 import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
-
+from bf4 import BeautifulSoup;
 
 class TextComparer:
     def __init__(self, url_list=[]):
         self.url_list = url_list
+
 
     def download(self, url, filename):
         try:
